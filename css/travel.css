@@ -1,0 +1,250 @@
+/* common classes */
+.container {
+  max-width: 968px;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.btn {
+  border-radius: 0;
+  padding: 0.8rem 1.7rem;
+  font-size: 1.2rem;
+  color: white;
+  background: #14505c;
+  font-weight: 500;
+}
+/* header */
+.navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-brand {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.nav-item {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active-link {
+  border-bottom: 2px solid white;
+  transition: all 300ms ease;
+}
+
+/* bannar img */
+.banner-image {
+  background-image: url("../img/travel-img/home1.jpg");
+  background-size: cover;
+  height: 100vh;
+  padding-bottom: 2rem;
+}
+.home-container {
+  position: relative;
+  margin-top: 120px;
+  /* max-width: 555px; */
+  /* margin-left: 1em; */
+}
+.home-container h1 {
+  font-weight: 400;
+}
+.home-container h1 span {
+  font-weight: 700;
+}
+
+.home-social {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 2rem;
+  align-items: flex-end;
+}
+.home-social .home-social-link {
+  color: white;
+}
+.home-info {
+  padding: 1rem;
+  background-color: #14505c;
+}
+
+/* about */
+.about {
+  padding: 5rem 0;
+}
+.about h3 {
+  color: #14505c;
+}
+.about p {
+  color: #44686f;
+  margin: 2rem 0;
+}
+
+/* discover */
+.discover {
+  padding: 5rem 0;
+}
+.discover h2 {
+  color: #14505c;
+}
+.discover-container {
+  overflow: hidden;
+  margin: 3rem 0;
+}
+.discover-card {
+  width: 280px;
+  overflow: hidden;
+  position: relative;
+}
+.card-info {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+.card-info .title {
+  color: white;
+  font-weight: 500;
+}
+.card-info .description {
+  color: white;
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+/* experience */
+.experience {
+  padding-bottom: 3rem;
+}
+.top-exeperience h2 {
+  color: #14505c;
+}
+.count-experience {
+  gap: 1.4rem;
+}
+.count-experience .box {
+  margin: 2rem 0;
+  gap: 1rem;
+}
+.count-experience .box h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.count-experience .box p {
+  font-size: 14px;
+  color: #44686f;
+  font-style: italic;
+}
+
+.experience-img-grid {
+  position: relative;
+}
+.experience-img-grid .img-1 {
+  width: 260px;
+}
+.experience-img-grid .img-2 {
+  position: absolute;
+  right: 12rem;
+  top: 3rem;
+  height: 120px;
+}
+.experience-img-grid .img-2 img{
+    width: 300px;
+    height: 390px;
+}
+
+/* places */
+.places {
+  padding: 5rem 0;
+}
+.places h1{
+    margin-bottom: 2rem;
+    color: #14505c;
+    font-weight: normal;
+}
+.places-grid {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  gap: 20px;
+}
+.places-grid .place-card {
+  position: relative;
+  height: 420px;
+}
+.places-grid .place-card .place-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: wheat;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 0.75rem 1rem;
+}
+.places-grid .place-card .place-content span {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.place-card .place-content .info {
+  margin-top: 10rem;
+}
+.place-card .place-content .info .title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.place-card .place-content .info .name {
+  font-size: 16px;
+  font-weight: 400;
+}
+.place-card .place-content .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.place-card .place-content .bottom .price{
+    font-size: 24px;
+    font-weight: 600;
+}
+.place-card .place-content .bottom .btn{
+    margin-right: -12px;
+    margin-bottom: -16px;
+}
+
+/* footer */
+footer{
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    margin-bottom: 2rem;
+}
+footer .footer-info{
+    margin-bottom: 2rem;
+}
+footer .footer-info h2{
+color: #14505c;
+margin-bottom: 12px;
+}
+footer .footer-info .footer-social{
+    display: flex;
+    gap: 20px;
+}
+footer .footer-info .footer-social .home-social-link{
+    color: #14505c;
+font-size: 1.5rem;
+}
+footer .footer-info ul{
+    list-style: none;
+    
+    padding: 0;
+}
+footer .footer-info ul li{
+    margin: 8px 0;
+}
+footer .footer-info ul li a{
+    color: #44686f;
+    margin: 4px 0;
+}
