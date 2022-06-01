@@ -52,6 +52,7 @@
             </div>
         </div>
     </header>
+    <!-- responsive test section -->
     <div class="about" id="about">
         <h1 class="text-center">About Me</h1>
 
