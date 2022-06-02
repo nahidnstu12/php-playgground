@@ -155,9 +155,7 @@ a:hover {
   place-items: center;
   /* display: none; */
 }
-.portfolio img:hover::after + .overlay-portfolio{
 
-}
 /*  */
 
 .blog {
@@ -247,4 +245,22 @@ a:hover {
 .contact-form .right .form-control::placeholder {
   color: #888;
   font-size: 16px;
+}
+
+/* responsive.page */
+.btn-danger,.show>.btn-danger.dropdown-toggle,.btn-danger:not(:disabled):not(.disabled):active{
+  box-shadow: none;
+    color: #eee;
+    background: #2d4a4e;
+    border: none;
+  
+}
+
+.btn-danger:hover{
+  background-color: #10828c;
+}
+
+
+.btn-danger:not(:disabled):not(.disabled):active:focus, .show>.btn-danger.dropdown-toggle:focus ,.btn-danger:not(:disabled):not(.disabled):active, .btn-danger:focus {
+  box-shadow: none;
 }

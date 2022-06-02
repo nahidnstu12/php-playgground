@@ -13,9 +13,17 @@
 
 </head>
 
-<body>
+<body style="margin-bottom:5rem">
 
-    <h1 class="p-1 text-info" title="hello ">hello Nahid</h1>
+<section>
+    <ul class="lists">
+        <li>one</li>
+        <li>two</li>
+        <li>threww</li>
+        <li><input type="text"></li>
+    </ul>
+</section>
+    <h1 class="p-1 text-info mt-4" title="hello ">hello Nahid</h1>
     <h2 class="test " align="center" id="programmer">Hello again</h2>
     <h1 class="concat"></h1>
     <!-- <img src="img/brand1.png"id="imgid" alt="" width="200" height="200"> -->
@@ -88,6 +96,13 @@
     </div>
     </div>
     <div class="JsonData" id="displayArea"></div>
+    <!-- today -->
+    <h1 class="text-center mb-5">1/6/22</h1>
+
+    <h1> Click on any below square to clone it : </h1>
+    <div class="div p-4 m-1" style="background-color : red;"> </div>
+    <div class="div p-4 m-1" style="background-color: yellow;"> </div>
+    <div class="div p-4 m-1" style="background-color: blue;"> </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

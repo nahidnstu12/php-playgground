@@ -39,7 +39,7 @@
             </ul>
         </div>
     </nav>
-    <header class="header">
+    <!-- <header class="header">
         <div class="overlay">
             <div class="container">
                 <div class="description ">
@@ -51,9 +51,9 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- responsive test -->
-    <section class="container my-5">
+    <!-- <section class="container my-5">
         <div class="row">
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div class="card">
@@ -118,42 +118,60 @@
             </div>
         </div>
         </div>
-    </section>
+    </section> -->
     <h3 class="my-5 text-center">I Need A Break</h3>
-    <section>
-        <div class="card-group">
-            <div class="card">
-                <img class="card-img-top" src="img/team-2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
+    <!-- <section class="container">
+        <div class="alert alert-success" role="alert" id="my-alert">
+            <div class="d-flex justify-content-between">
+                <h4 class="alert-heading">Well done!</h4>
+                <button class="close-btn btn btn-primary p-2">Close Alert</button>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="img/team-3.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="img/team-1.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </div>
+
+            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+            <hr>
+            <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </div>
+    </section> -->
+    <section class="container">
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action
+            </button>
+            <div class="dropdown-menu">
+
+                <ul class="list-group">
+                    <li class="list-group-item active">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
             </div>
         </div>
     </section>
+    <section class="container">
+        <ul class="nav nav-tabs nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active text-dark" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark" href="#">Disabled</a>
+            </li>
+        </ul>
+      
+
+    </section>
+    <button type="button" class="btn btn-lg btn-danger" id="btn-popover" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    <button type="button" id="btn-popover-top" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+  Popover on top
+</button>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -1,12 +1,12 @@
 $(document).ready(function () {
   // document.write("Hello there ");
-  console.log("we are ready to work!");
+  // console.log("we are ready to work!");
   //   $("h1.text-info").click(() => alert("we watch you!"));
   //   $("h1.text-info").on("mouseenter",() => alert("we test you!"));
 
   const title = $("h1").attr("title");
   const id = $(".test").attr("id");
-  console.log({ title, id });
+  // console.log({ title, id });
   $(".concat").text(title + id);
   $("#imgid").on("mouseenter", function () {
     $(this).attr("src", "img/team-2.jpg");
@@ -27,7 +27,7 @@ $(document).ready(function () {
 //   get json data
 $("button").click(function(){
     const serial = $("form").serializeArray()
-    console.log(serial);
+    // console.log(serial);
     
     $.each(serial, function(val, names){
         $("#displayArea").append(`${names.name} : ${names.value} <br>` )
@@ -44,7 +44,7 @@ $("button").click(function(){
     // console.log(x);
     // var y=[]
   var y = x.map(item => item.innerHTML)
-    console.log(y);
+    // console.log(y);
     
   });
 
@@ -54,6 +54,10 @@ $("button").click(function(){
 //   $(".test").click(function(){
 //     alert($(".concat").data("greeting"));
 //   });
+
+
+
+
 });
 
 function Lefttime() {
@@ -61,7 +65,7 @@ function Lefttime() {
 
   setTimeout(function () {
     a.value = "0 seconds";
-    console.log(a.value);
+    // console.log(a.value);
     if (a.value == "0 seconds") {
       alert("time up");
     }
@@ -96,7 +100,7 @@ let arr = ["py", "js", "php"];
 
 // kaj kore na
 $.each(arr, function (i, val) {
-  console.log({ i, val });
+  // console.log({ i, val });
   $("#"+i).text(val)
   $("#"+i).append(document.createTextNode("- "+val))
 });
@@ -132,3 +136,37 @@ $("table tr").each(function(){
 $("table tfoot td").eq(i).text("Sum is: " +sum)
 }
 
+// 1/6/22
+$(document).ready(function(){
+ 
+  
+  $(".div").click(function(){
+    console.log("ok");
+    
+    $(this).clone().insertAfter(this)
+  })
+
+  // $(".lists li").each((item,val)=>{
+  //   console.log({item,val});
+    
+  //   val.textContent = "nahid"
+  // })
+ 
+    $(".lists li").click(function(){
+      // $(this).slideToggle();
+    });
+
+    // $("li input").focus(function(){
+    //   $(this).css("background-color","#FFFFCC");
+    // });
+    // $("input").blur(function(){
+    //   $("input").css("background-color","#D6D6FF");
+    // });
+
+})
+
+// document.querySelectorAll('.lists li').forEach((el, index) => {
+//   console.log({el,index});
+  
+//   el.innerHTML = '<p>Hello World</p>';
+// });
