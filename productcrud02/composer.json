@@ -1,0 +1,15 @@
+{
+    "name": "dell/productcrud02",
+    "authors": [
+        {
+            "name": "nahidnstu12",
+            "email": "nahid.dev19@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    }
+}
