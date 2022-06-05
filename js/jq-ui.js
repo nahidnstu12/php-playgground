@@ -9,9 +9,10 @@ $(document).ready(function () {
   $(".card-drop").droppable({
     drop: function (event, ui) {
     //   console.log({ event, ui });
-    console.log($(ui));
+    console.log(ui);
     
     },
+    // activate: function( event, ui ) {console.log({ui,init:"activate"});}
   });
 
 //   $( "ul" ).sortable({
@@ -23,7 +24,7 @@ $(document).ready(function () {
     {
         connectWith : ".sortable",
         receive : function(e, ui) {
-            console.log({ui});
+            console.log({ui,init:"receive"});
             
             var status_id = $(ui.item).parent(".sortable").data(
                     "status-id");
@@ -38,6 +39,22 @@ $(document).ready(function () {
             //     success : function(response) {
             //     }
             // });
+        },
+        chnage: function(e,ui){
+            console.log({ui,init:"chnage"});
+            
+        },
+        start: function(e,ui){
+            console.log({ui,init:"start"});
+            
+        },
+        sort: function(e,ui){
+            console.log({ui,init:"sort"});
+            
+        },
+        update: function(e,ui){
+            console.log({ui:ui.item,init:"update"});
+            
         }
 
     })
