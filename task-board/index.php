@@ -28,13 +28,14 @@ $statusResult = getAllStatus($pdo);
 // echo '<pre>'; 
 
 ?>
+
 <body>
     <div class="task-board">
         <?php
         foreach ($statusResult as $statusRow) {
 
-            $taskResult = getProjectTaskByStatus($statusRow["id"],$projectName,$pdo);
-           
+            $taskResult = getProjectTaskByStatus($statusRow["id"], $projectName, $pdo);
+
         ?>
             <div class="status-card">
                 <div class="card-header">
@@ -45,27 +46,32 @@ $statusResult = getAllStatus($pdo);
                 <?php echo '<div class="list" id="c_' . $statusRow["id"] . '" data-status-id="' . $statusRow["id"] . '" >';
                 ?>
                 <!-- <script type="text/javascript">
-                    new Sortable.create(document.getElementById(<? //echo '"c_' . $statusRow["id"] . '"'; ?>), opt);
+                    new Sortable.create(document.getElementById(<? //echo '"c_' . $statusRow["id"] . '"'; 
+                                                                ?>), opt);
                 </script> -->
 
-                <?
+                <?php
+                    // var_dump($taskResult);
+                
                 if (!empty($taskResult)) {
-                     
+
                     foreach ($taskResult as $taskRow) {
-                      
+                        // var_dump($taskRow['title']);
+                        // var_dump($taskRow);
+                        // echo $taskRow;
                 ?>
                         <div class="text-row ui-sortable-handle" data-task-id="<?php echo $taskRow["id"]; ?>">
-                            <?php 
-                             echo '<pre>'; 
-                             var_dump($taskRow);
-                            var_dump($taskResult);
+                            <?php
+                            echo '<pre>';
+                            var_dump($taskRow);
+                            // var_dump($taskResult);
                             exit;
-                            echo '<pre>'; 
-                            
+                            echo '<pre>';
+
                             ?>
                         </div>
 
-                <?
+                <?php
                     }
                 }
                 // end cards
@@ -75,7 +81,7 @@ $statusResult = getAllStatus($pdo);
 
             <div class="add_form">
 
-                <form action="<? echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" enctype="multipart/form-data">
                     <input type="hidden" name="action" value="submit">
 
                     <?php
@@ -112,15 +118,15 @@ $statusResult = getAllStatus($pdo);
         }
 ?>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="script.js"></script>
-   
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="script.js"></script>
+
 
 </div>
 </body>
