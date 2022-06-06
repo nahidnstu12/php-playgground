@@ -21,6 +21,28 @@ function getAllStatus($pdo)
     return $query->fetchAll(PDO::FETCH_ASSOC);
 }
 
+function editTaskStatus($statusId, $taskId,$pdo)
+{
+   
+    $query = $pdo->prepare("update taskslists set status_id =:status_id where id=:id");
+    $query->bindValue(':status_id', $statusId);
+    $query->bindValue(':id', $taskId);
+    
+    $query->execute();
+}
+function addTaskItem($statusId, $title, $projectName,$pdo)
+{
+   
+    $query = $pdo->prepare("insert into taskslists (title,project_name, status_id,created_at) values (:title,:project_name,:status_id,:date)");
+    $query->bindValue(':title', $title);
+    $query->bindValue(':project_name', $projectName);
+    $query->bindValue(':status_id', $statusId);
+    $query->bindValue(':date', date('Y-m-d H:i:s'));
+    
+    $query->execute();
+}
+
+// later use
 class TaskManagement01
 {
     function getProjectTaskByStatus($statusId, $projectName)
